@@ -18,8 +18,8 @@ while True:
             input1 = float(input("enter height for which you want to predict weight: "))
             print("Your estimated Salary:", mind.predict( [[ input1 ]] ) )
             quit = input("\nPress q to exit & to continue press Enter:  ")
-	print()
-	if quit == "q":
+	    print()
+	    if quit == "q":
 	 	break
             
 joblib.dump(mind, 'weight-height.py')
